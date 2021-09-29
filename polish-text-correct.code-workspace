@@ -1,0 +1,16 @@
+{
+	"folders": [
+	  {
+		"path": "."
+	  }
+	],
+	"settings": {
+	  "C_Cpp.default.defines": [],
+	  "editor.tabSize": 4,
+	  "emmet.includeLanguages": {
+		"django-html": "html"
+	  },
+	  "python.linting.pylintArgs": ["--load-plugins=pylint_django"]
+	}
+  }
+  
