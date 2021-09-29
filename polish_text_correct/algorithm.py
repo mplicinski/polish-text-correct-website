@@ -59,14 +59,16 @@ class TextCorrect:
                     chars[char] = chars[char].upper()
                     result = ''.join(chars)
                     self.corrected_words[i] = result
-        print(self.corrected_words)
 
     def replace_words(self):
         converted_text = self.original_text
         for i, original_word in enumerate(self.case_preserved_words):
             if original_word != self.corrected_words[i]:
                 converted_text = converted_text.replace(original_word, self.corrected_words[i])
+                print(original_word, self.corrected_words[i])
+        print(converted_text)
         return converted_text
+        
 
     def run_correct(self, text):
         self.get_text_data(text)
