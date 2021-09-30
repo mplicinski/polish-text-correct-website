@@ -18,6 +18,6 @@ Case is preserved after the correction
 
 Puncuation is preserved as well
 
-Jaq suę masz?
+> Jaq suę masz?
 
-Jak się masz?
+> Jak się masz?
