@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from .forms import TextForm
 from .algorithm import TextCorrect
 
+text_correct = TextCorrect()
 
 class HomeView(FormView):
     template_name = 'home.html'
@@ -22,8 +23,6 @@ class HomeView(FormView):
 
     def form_valid(self, form, **kwargs):
         text = form.cleaned_data['text']
-        
-        text_correct = TextCorrect()
         new_text = text_correct.run_correct(text)
 
         return self.render_to_response(
